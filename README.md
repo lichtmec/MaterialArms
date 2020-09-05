@@ -15,7 +15,7 @@ https://github.com/lichtmec/MaterialArms-API
 ## Supported  
 - NotEnoughItems
 - IndustrialCraft2　2.2.746+
-- GregTech　6.03.01+
+- GregTech　6.05.22+
 <br />
 
 ## Links
