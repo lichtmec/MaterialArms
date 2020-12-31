@@ -1,0 +1,361 @@
+MaterialArms Changelog
+
+1.1.7	It will not be updated permanently.
+
+======= Versions of the upper here is not released ===============================================================
+
+1.1.6	[Add]ScubaModule : パワードスーツに搭載することで、潜水時間の引き延ばすことが可能
+	[Add]WideRangeChargerModule : ホットバー全域に給電できるToolChargerModule
+	[Fix?]パワードスーツ装着時、極稀に全てのHUDが非表示になりゲームメニューも表示されなくなる問題への軽減策を実施
+	[Improve]アーマーモジュールのツールチップに、装着可能部位の表示を追加
+
+1.1.5	[Add]Wireに成形できるタイプのMold
+	[Fix]LargeSmelter : Crucibleの内容物が同期されない場合がある
+	[Fix]DustMetallurgyMachine : GUIを開いていない状態で加工が完了したとき、進捗が同期されない
+	[Implement][SupportGT6]MAのCrusherで、GT6のCrusherレシピを実行できるように
+	[Implement][SupportGT6]MAのPulverizer(Crushmill)で、GT6のShredderレシピを実行できるように
+	[Implement][SupportGT6]MAのPlateProcessor(Ingot->Plate)で、GT6のRollingMillのレシピを実行できるように
+	[Implement]ElectricHeater : GUIから出力を調整できるように。また、これに伴ってGUIの構成を変更
+	[Improve]一部のアイテムをクラフトで古い金属プレートへ変えられるように。摩耗したアイテムを分解・融解して再利用が可能に
+	[Improve]Smelterで合金を作成する際、殆どのレシピで汚れた粉末でも作成できるように
+	[Improve]PlateProcessor : カテゴリ選択の操作と表示を改善
+	[Improve]LargeSmelterのGUIから、認識しているHeaterのGUIを開けるように
+	[Note]GregTech6の対応バージョンを6.05.22+に更新
+
+1.1.4	[Fix]SlenderPipe : 隣接ブロックとつながらない設定にした際に、テクスチャが変化しなかった
+	[Fix]MACraftingTable : スロットの「搬入禁止」のマークがGUI上で表示されていなかった
+	[Fix]MACraftingTable : Qキーでアイテムをドロップする操作が機能しなかった
+	[Fix]特定の環境で、Cursherのレシピ読み込み時にクラッシュしていた
+	[Fix]EnergyStorage : Screwdriverでスニーク+右クリックした際にモジュールを取り外す動作が機能していなかった
+	[Improve]タービン関連の要素で表示するパラメータを増やした
+	[Improve]ResearchDataLib.の使い方が全く伝わらないGUIを作り直した
+
+1.1.3	[Add]Jetpack(Tier2)からAdv.Jetpackを作成するレシピ
+	[Add]DiecastingBox+ : 電気を使用して金属の成形速度を早めたDiecastingBox
+	[Add]FluidHeater : OilやFuel等、流体燃料を使用して発熱するHeater
+	[Add]ReinforcedTurbineBlades : 通常のものより重く、耐久値の高いTurbineBlades
+	[Change]Tier3以上のTurbineで発電に必要な動力を調整(より多くの動力が必要に)
+	[Fix]JumpBooster(Leggings)のTier2で要求されるPistonがTier1のものになっていた
+	[Fix]パワードスーツのHUDを表示しているとき、他のMODのHUDが正しく描画されない場合があった
+	[Fix]パワードスーツの耐久値が、クリエイティブタブから取り出したものとクラフトしたもので異なっていた
+	[Fix]GUIを開いている状態でモジュールのON/OFFキーを押下すると状態が変化していた
+	[Fix]DieselGenerator : 着火時に電力を消費していなかった
+	[Fix]タービン系アイテムの名称を修正
+	[Fix]TurbineBlades : ワークベンチで作成した際の耐久値設定が正常ではなかった
+	[Improve]再生されるサウンドの音量を調整できるよう、configを追加
+	[Improve]いくつかのGUIの挙動を改善
+	[Improve]Heater系ブロックのツールチップに「予想到達温度」の記載を追加
+
+1.1.2	[Add]EnergyStorageBridge : 直線でしか配置できない代わりに、低コストで機械同士を電気的に接続できるブロック
+	[Add]金属ブロックのクラフトレシピ
+	[Add]実績にパワードスーツに関する項目を追加
+	[Change]RSGeneratorのレシピ変更、原材料と完成品の間に中間素材を挟む方式に
+	[Change]RSGeneratorModuleのレシピ変更、↑の中間素材を要求するようになり、RSGeneratorまでの作成は不要に
+	[Change]JetpackやLegThrusterなどのモジュールが、左Ctrl+スニーク+切り替えキーでOFFにできるように
+	[Change]Jetpack, LegThruster : ON/OFFの切り替えキー検出を、クールタイムではなく押下したタイミングのみで行うように
+	[Fix]大部分の機械がHopper等の自動搬入出に対応できていなかった
+	[Fix]Tier2以上のArmorBuilder/CoreBuilderがクラフトできなかった
+	[Fix]アーマーモジュール:AdditionalPlateの効果がほぼ無い状態となっていた
+	[Fix]アーマーのAPが正しく設定されていなかった
+
+1.1.1	[Add]ShockAbsorberModule の電力消費特性の違うバージョンと、脚部バージョン
+	[Change]既存の ShockAbsorberModule を ShockAbsorberModule(Primitive) に改名
+	[Change]Tier2のアーマーモジュールを構成する金属素材を変更、また、それに伴ってアイコンを修正
+	[Fix]PhysicalShieldモジュールでダメージを軽減した際のダメージと耐久値減少の計算式が誤っていた
+	[Fix]Tier2以上のRSGeneratorの名称が誤っていた
+	[Improve]HUDでのモジュール操作時の識別を補助するため、アーマーモジュールにカテゴリを追加
+
+1.1.0	[Add]Tier2~Tier4のEnergyStorageに対応したRSGenerator
+	[Add]PowerDustProcessor : 一部の中間素材を作成するための機械
+	[Add]一部アイテムのツールチップにフレーバーテキストを追加 (configのappearance/showFlavorから非表示にできる)
+	[Add]Tier2 パワードスーツ
+	[Add]Tier2相当のコアコンポーネントとアーマーモジュール
+	[Change][Assets]装備に関係する一部テクスチャを factorycomp から equipmodules へ移動
+	[Change]Pipeを非立方体ブロックに変更 (configのappearance/slenderPipeから差し戻し可)
+	[Change]パワードスーツのHUDは、Tier2以上で機能するように
+	[Change]配布場所の変更に伴い、MOD情報のURL欄を更新
+	[Change]機械の最大蓄電量を全体的に見直し
+	[Fix]ToolChargerModuleを組み込んだアーマーで、特定条件下で他のモジュールが機能しなくなる
+	[Fix]ReserachNoteのGUIを開くことができない
+	[Fix]EmitBooster(CoreComponent)の効果がコア蓄電量に加算されていた
+	[Fix]configのファイルまたは項目が生成されるとき、Minecraftを再起動するまで本来の初期値と違う設定値で動作することがある
+	[Implement]金属ブロックがビーコンの土台として使えるように
+	[Improve]ビルド済みArmorCoreの仕様をツールチップから確認できるように
+	[Improve]CoreBuilderに低いTierのコアをセットした時、組み込み可能なコアモジュールの範囲が可視化されるように
+
+1.0.7Fix
+	[Fix][SupportNEI]GregTechを導入していない状態で、特定アイテムのレシピを参照するとクラッシュする
+	[Fix][SupportNEI]ElectricFurnaceから精錬レシピのレシピリストを参照できない
+
+1.0.7	[Add]ElectricIgniter : 電気で動作する着火器具, GregTech6のBurningBoxにも対応
+	[Add]DieselGenerator : Fuelを消費して発電する機械
+	[Fix]粉末の流体をアイテムとして搬出する際に、対象Slotがスタック限界だった場合に空きSlotがあっても搬出されない
+	[Fix]CircuitAssemblerでCalculationUnitからAdvancedCircuitを作成するレシピの素材要求数の誤り
+	[Fix][SupportNEI]DistillationTowerのレシピ表示でProgressbarの元テクスチャが表示されている
+	[Improve]CircuitAssembler : フィルタースロットが、同じ鉱石辞書名を持つ別アイテムを指定した場合も機能するように
+
+1.0.6	[Fix]Fluid-Material/Material-Fluid Converter : 東西向きに置いたとき、入出力を示すテクスチャが逆になる
+	[Fix]CircuitAssembler : 加工開始・素材消費をした時点で他のレシピの素材が揃っている場合、不正な動作をする場合がある
+	[Implement]CircuitAssembler : 完成品を指定して実行するレシピを限定することができるフィルタースロットを追加
+
+1.0.5	[Add]Electrolyzer : 水の電気分解やBauxiteの電解精錬が可能
+	[Add]CoalLiquefier : 石炭や褐炭の粉末と水素からオイルを生成できる
+	[Add]Tank : 流体を保管できる、破壊回収しても内容物は保持される
+	[Add]DistillationTowerPart : 気化させた物質を複数の物質に分離させることができる
+	[Add]CircuitAssembler : 回路系の素材を作成できる機械
+	[Change]DustMetallurgyMachine : 内部の粉末をアイテムとして取り出す時、大きい粉末のStackとして吐き出されるように
+	[Fix]Lumberjackで、原木でないブロックも一括破壊対象に含まれていた
+	[Fix]GUIを開いていない状態でそのTileEntity内に貯蔵された物質が空になった場合、表示上は内容物が残っている
+	[Improve][SupportNEI]MAEnchantTableを使用した加工レシピで、素材と完成品両方を表示するように
+	[Implement]流体状態の粉末が入っている機械を破壊した際に、対応する粉末がアイテムとしてドロップするように
+	[Implement][SupportNEI]レシピブラウザで流体をクリックすると関連するレシピを検索できるように
+
+1.0.4	[Fix]新しくエンチャントを行ったアーマーを装備するとクラッシュする
+	[Fix]Tick更新で魔力を消費するエンチャントを付けていると、魔力が満タンの状態から(表示上のみ)少しずつ減少する
+	[Fix][API]Tick処理で魔力を消費するエンチャントを付けていると、アイテムの使用やブロックの破壊を継続できない
+	[Improve]ElectricHeaterのGUIで、稼働中のみ炎マークが点灯するように
+	[Improve][SupportGT]Wireを使用するレシピを、GregTechのFineWireに対応
+
+1.0.3	[Add]エンチャント : DigExtension(ブロックを破壊した時、周囲の採掘可能なブロックも同時に破壊する)
+	[Add]エンチャント : Lumberjack(所謂「木こり」)
+	[Add]DropCollector : 周囲に落ちているアイテムを引き寄せる
+	[Add][SupportGT]Gear,SmallGear,LongRodの鋳型
+	[Change]DustMetallurgyMachine : 金属の融点に対してtierが低すぎる場合、焼結に多くの時間がかかるように
+	[Fix]ShovelがDirt,Grass,Sand等のブロックに対して適正ツールとして認識されない
+	[Fix]特定の動作をトリガーに動作するエンチャントで、魔力が消費されない
+	[Fix]一部のElidium製マシンを設置するとゲームがクラッシュする
+	[Improve]Protection : 被ダメージ時のシールド耐久値の表示を改良
+
+1.0.2	[Add]SmelterでMAのツールやアーマーを溶かすレシピ
+	[Add]PlateProcessor : プレート関連の加工処理を行うことができる
+	[Add]DustMetallurgyMachine : 金属の粉末を鋳型に合わせて成形することができる
+	[Fix]LargeSmelterで、Curcibleが空の状態で完成品の量が1296mBを超えるレシピを実行すると実行後の内容量がおかしくなる
+	[Fix]CrusherのGUIで、Shiftクリックで加工するアイテムを移動できない
+	[Fix][SupportNEI]Smelterのレシピ表示で、完成品の量が1296mBを超えると表示がおかしくなる
+	[Improve][SupportGT]MAの加工ツールをGregTechのレシピで使用できるように
+	[Improve][SupportGT]MAのDoublePlateをGregTechのレシピで使用できるように
+	[Improve][SupportNEI]完成品からのレシピ検索で、鉱石辞書によって互換性のあるアイテムを作成するレシピもヒットするように
+
+1.0.1	[Change]EliumCollectorのレシピ(素材としてclockを要求するように)
+	[Fix][API]物質の「圧縮率」がリログ時にリセットされる問題
+	[Implement]EliumCollectorが、現実の時間経過でもEliumを産出するように
+	[Implement]EliumCollectorの生産の進捗状況をGUIで確認できるように
+
+1.0.0	[Add]日本語に対応
+	[Add]実績を追加
+	[Add]エンチャント : MagicArrow(MAの弓系アイテムに対応、矢が無いときに魔力で代替する)
+	[Add]EliumCollector : 設置チャンクが読み込まれている間、少しずつエリウムを生産する
+	[Change]落下中にBastardSwordで攻撃すると、耐久値と引き換えにAP無視のダメージを与えられるように
+	[Change]エンチャント:Antihealで、クリエイティブモードのプレイヤーにダメージを与えられないように
+	[Change]エンチャント:Antihealで、クリエイティブモードのプレイヤーにダメージを与えられないように
+	[Fix]GeothermalHeaterで、真下のBlockが熱源として使えないブロックに変わっても熱を生産し続ける
+	[Fix]エンチャント:Counterにローカライズが適用されていない
+	[Fix]ツールの適正/不適正が一部正しく設定されていなかった
+	[Fix]適正ツールで、採掘レベルが足りない場合でもツールの採掘速度が適用される
+	[Fix]一部レシピの設定ミス
+	[Fix]Forge1253以降の環境で、エンチャント:Antihealが機能しなくなっていた
+	[Fix]LargeSmelterで、一部レシピ実行時に消費される素材の種類/量が不正だった
+	[Fix]カスタマイズ/エンチャントで、言語設定を変更してもクライアントを再起動するまで新しい設定が反映されなかった
+	[Implement]近接武器向けのエンチャントの一部を弓に対応
+
+0.9.8rc	[Add]エンチャント : PoisonResist(毒ポーションによるスリップダメージを完全に無効化する)
+	[Add]MFConverter/FMConverter : MAの流体系とForgeの流体系を変換できる装置
+	[Change]投擲された短剣の描画をアイテムのアイコンに変更、元のモデルはアイコン形式での描画に必要な情報が揃わなかった場合に使用される
+	[Change]EmptyCrystalのレシピ変更
+	[Change]ManaStrikeの範囲攻撃が空振りでも発動するように
+	[Change]各Tierごとの蓄電量を変更(World内で取得/設置済みのBlockの蓄電残量には影響しない)
+	[Change]エンチャント:Protectionの仕様変更、一定時間内に軽減できるダメージ量が限られるように
+	[Change][API]IBlockDrivableMA/IBlockWrenchableMAの仕様変更
+	[Fix]Dagger・Arrowがブロックに刺さった際の位置がおかしい問題
+	[Fix]マルチプレイでCompositeBowを発射できなかった
+	[Fix]温めた/冷やしたBlockの温度が、バイオームの気温と同じくらいまで戻らない問題
+	[Fix][API]IBlockDrivableMAが、IBlockWrenchableMAを実装していないと機能しなかった
+	[Fix][SupportIC2]EnergyOutputPortの出力面からIC2 EUが流入していた
+	[Improve]空のスロットを右クリックすることで、アイテムが入らないよう設定できるように
+	[Improve]Wrenchを使って機械の向きを変えられるように
+	[Improve]凝固した(状態が"SOLID"になった)金属が入ったBlockを破壊した際に、中身の量に応じて金属片がドロップするように
+
+0.9.7rcFix
+	[Fix]GregTech6の特定以降のバージョンと同時に導入するとクラッシュする
+	[Update][SupportGT]GregTech-6.03.01
+
+0.9.7rc [Add]Smelterでバニラの金属製アイテムを融解するレシピ
+	[Add]Mold(Carbonsteel, Osmium, Iridium, Tungsten製)
+	[Add]GeothermalHeater : 溶岩等の熱源となるブロックから熱を得ることができる
+	[Add]Crusher : 破砕機、鉱石を砕いて倍化したりといったことが可能
+	[Add][API]熱関連のAPIを更新、熱流動はアドオン側が何もしなくてもMaterialArms側で自動的に処理される
+	[Change]LargeSmelterの仕様変更
+	[Change]SteamTurbinの発電量がTurbinCasingのTierに依存するように
+	[Fix]LargeSmelterControlerのGUIで、上側Heaterと下側Heaterのコントロールが逆になっていた
+	[Fix]Enchant:Rerollを適用する対象によって例外が発生していた
+	[Fix]剣の種類によって耐久値が変わっていなかった
+	[Fix]Crucibleの名称が"Crusible"となっていた
+	[Fix][SupportIC2]IC2を導入していない環境で、EUEmitterがクリエイティブタブに存在し、代わりにMoldが除外される
+	[Implement]EnergyInputPortが入力面の反対側とそれに接続する機械に電力を供給するように
+	[Improve]パワードスーツを全素材分クリエイティブタブから取り出せるように
+	[Improve]熱の伝わり方がTileEntityの読み込み順に依存しないように
+
+0.9.6rc	[Add]OldDoublePlate : 主にDoublePlateを材料とするアイテムから回収でき、融解して再利用できる
+	[Add]EnergyStorage Tier4, Tier5, Tier6 のレシピ
+	[Add]Tier4, Tier5のバッテリー
+	[Add]EliumFlux : 16個まとめると1/4サイズのEliumDustになる。ブロックを破壊した際に低確率でドロップ
+	[Add]Crusible : ブロックのみ実装、主機能は次回アップデートで実装予定
+	[Change]既存レシピの調整
+	[Fix]MAEnchantTableで、エンチャント実行用アイテムをスタックして配置すると余計に消費/充填される
+	[Fix]ForgeTable, MAEnchantTableで、対象アイテムをスタックして配置できる
+	[Fix]メタデータ16以上の金属ブロックのテクスチャがリログ時におかしくなる
+	[Fix]破壊した機械ブロックやレンチで回収したブロックのドロップがあらぬ方向に飛ぶ
+	[Fix]EnergyStorageが配置によっては透明になることがある
+	[Implement]ハンマーで機械を破壊することで、素材アイテムに分解できるように
+	[Implement]機械の耐久値がひび割れによって大まかに分かるように
+	[Improve]CompositeBowを引き絞ってる時に捨てた場合、つがえている矢もドロップするように
+
+0.9.5rc	[Add]劣化したエリウム : 新素材, EnchanterActivationCrystalとハンマーでクラフトすると入手できる
+	[Add]金属ブロック(RedAlloy, Tungstensteel, Osmiridium, Alumina, Elidium)
+	[Add]火打石・黒曜石製のツール・アーマー
+	[Add]短弓(CompositeBow)と専用の矢弾
+	[Add]新たなエンチャント : Counter
+	[Fix]耐久値の無い中間素材等がダメージにより破壊される
+	[Improve]Wrenchを使用することで、Pipeの流出・流入面を制限できるように
+	[Improve]Storageが破壊時に内部インベントリを保持するように
+
+0.9.4rc	[Add]AnalysisRecipe : MAWorkbenchを使用し、アイテムを消費せずに基底技術を開放できるレシピ
+	[Add]鉱石の手動加工レシピ : 汚れた粉末を水バケツとクラフトして洗浄できる
+	[Change]一部の既存レシピが要求する基底技術
+	[Change]MAWorkbenchのレシピを変更
+	[Fix]ForgeTableで、既に付与済みのCustomizeを実行すると素材だけが消費されていた
+	[Fix]一部の金属粉末で、サイズを表示するツールチップが欠けていた
+	[Implement]MAのエンチャントの実行に、専用アイテムが必要になった
+	[Implement][SupportGT]GregTechの加工ツール(Hammer, Wrench, File, Screwdriver, Chisel)をMAのクラフトレシピに対応
+	[Improve]MAWorkbenchで、レシピ実行時に開放できる基底技術も表示されるように
+	[Improve][SupportIC2]MAのツールがIC2のToolboxに入るように
+	[Improve][SupportIC2]MAの電動アイテムがIC2の蓄電器で充電できるように
+	[Improve][SupportNEI]カスタマイズ、及びエンチャントのレシピ表示
+
+0.9.3rc	[Fix]MAWorkbenchで、研究ノートをセットした状態で基底技術を開放しない定型レシピを実行するとクラッシュする問題
+
+0.9.2rc	[Add][API]FusemeltRecipe(SmelterRecipe)をAPIから登録可能に
+	[Change][API]IMatContainerItemの各メソッドの引数や返り値
+	[Fix]鋳型の表示名のローカライズが正常に動作していなかった
+	[Fix]MAWorkbenchで、研究ノートをセットしていない状態で基底技術を開放するレシピを実行するとクラッシュする問題
+
+0.9.1rc	[Add]素材：アルミナ、現状使用用途無し
+	[Add]素材：エリジウム、及びそれを使用したツールと防具
+	[Add]研究ノートにGUI : 取得した研究のカテゴリ及び取得済みのランクを確認できる
+	[Add][API]MACraftingRecipe及びU.TechnologyをAPIから登録可能に
+	[Fix]タングステン鋼ワイヤー、オスミリジウムワイヤーの鉱石辞書登録名
+	[Fix][SupportNEI]複数種類の素材に対応するレシピで、1種類のパターンしか表示されなかった
+	[Fix][SupportNEI]複数個スタックされたアイテムを素材として要求する場合に、スタック数の表示が正常に行われなかった
+	[Improve]研究ノート, NEIのレシピ表示から、基底技術の解放条件になるレシピを確認できるように
+
+0.9.0rc	[Add]状態可変物質に「圧縮率」の項目
+	[Add][API]状態可変物質のレジストリへのアクセス用クラス
+	[Change]一部金属の色
+	[Change]Coal/Carbon系素材の辞書登録名
+	[Change]一部中間素材のIDを変更(MetalからFactoryComponentへ)
+	[Change][API]各クラスのフィールドのアクセス制限
+	[Implement]EntityEffectsシステム : バニラのポーションシステムの代替(非生物への付与や重ね掛け等が可能)
+	[Refactor]機械のBlock, TileEntityのメタデータに応じた処理
+	[Refactor]状態可変物質関連のクラスをAPIへ移動
+	[Reduce]機械ブロックのテクスチャ
+	[Reduce]langファイルの容量
+	[Remove]メタデータ:0のInlet
+
+0.8.3ob	[Fix]LargeSmelterの構成によってはGUIを開くとクラッシュする不具合
+	[Update][SupportGT]GregTech-6.01.00 (以降のバージョンでは6.00.xのAPIでは動作しない)
+
+0.8.2ob	[Add]PulverizerにおけるIngotやPlate等の粉砕レシピ
+	[Add]ChargeMonitor : EnergyStorageに取り付けると、蓄電残量を確認できるようになる
+	[Add][API]IBlockDrivableMA : Screwdriverで右クリックされた際のハンドラを持つ
+	[Change]いくつかの機械のレシピ
+	[Fix]EquipmentFluidHatchが凝固した物質も搬出できた不具合
+	[Fix]機械をPickBlockで取得しようとした際におかしなブロックが取得される不具合
+	[Fix]クリエイティブで機械を破壊してもドロップする不具合
+	[Implement]電動機械のGUIに蓄電残量を表すメーター
+	[Implement]LargeSmelterで、マルチブロックが欠損している場合に箇所によっては中身が失われるように
+	[Implement]EnergyInputPortからLargeSmelterの全インターフェースにエネルギーが供給されるように
+	[Improve]LargeSmelterControlerから搬出用EquipmentFluidHatchの自動搬出を切り替えられるように
+	[Improve]ScrewdriverでEUStorageに取り付けたモジュールを取り外せるように
+	[Modify]機械の耐熱性能を上方修正
+	[Optimize]エナジーネットワークをサーバー側だけで処理するように
+
+0.8.1ob	[Add][SupportIC2]いくつかの互換レシピ
+	[Fix]LargeSmelterで、作業中に本体温度が必要な温度を下回った際に処理がおかしくなる不具合
+	[Fix]DiecastingBoxで、中身を使い切った後も空にならず、0mbの物質が残る不具合
+	[Fix][SupportNEI]Fusemeltレシピタブが複数表示される不具合
+	[Fix][SupportNEI]Fusemeltレシピで、Stainlessの完成品表示がおかしくなっていた
+	[Improve]ElectricHeaterが自身の熱で瞬間的に耐熱限界を超えて壊れる現象に対処
+	[Modify]LargeSmelterで、マルチブロックが崩れた際に作業と中身が消滅するように
+	[Modify]LargeSmelterから流体を搬出する際に、一気にではなく少しずつ搬出されるように
+	[Modify]ElectricHeaterのスロットに入るアイテムのスタックサイズを1に制限
+	[Optimize]MAWorkbenchのレシピ探索処理
+
+0.8.0ob	[Add]素材：タングステン鋼・オスミリジウム、及びそれを使用したツールと防具
+	[Add]各種工具のアナザーレシピ(Stainless, Titanium, Tungstensteel に対応)
+	[Add]LargeSmelter : SmallSmelterより融点の高い金属の精錬が可能
+	[Fix]ボタンラベルのミスを修正
+	[Change]Inletのメタデータを0から1に(既存のInletは読み込まれると自動的に置き換えられる, 置換は0.8.xの間有効)
+	[Change]素材名：TungsteelをTungstensteelに
+	[Change]機械類の作成レシピ
+	[Change]機械がもつ熱の性質を変更(空気中への熱の逃げやすさ, 機械間で熱が伝播するように)
+	[Change]鉱石生成可否のコンフィグのデフォルト値が、コンフィグ生成時点でのMOD構成で変化するように
+	[Change]Smelterの融解レシピにおける動作温度・所要時間を調整
+	[Change]各種Turbinの発電量を下方修正
+	[Change]機械の消費電力
+	[Change][API]IBlockWrenchable：メソッドが戻り値を持つように。使用後にレンチの耐久を減らすかを決められる
+	[Implement][SupportIC2]IC2のForgeHammerをレシピに使用できるように
+	[Improve][SupportIC2]Pulverizerを「洗浄された粉砕鉱石(crushedPurified)」に対応
+
+0.7.3ob	[Fix]IC2のAPIが導入されていない状態で機械を設置するとクラッシュする不具合
+
+0.7.2ob	[Add]機械の筐体：BasicMachineCasing, ConductiveMachineCasing
+	[Change]機械の耐久値を上方修正
+	[Fix]特定条件下でアイテムがスタックできなくなる不具合
+	[Fix][Incomplete]Jetpack, LegThrusterの有効/無効の切り替えがGUIを開いている状態でも発生する不具合
+
+0.7.1ob	[Add]アーマーのモジュール：AdditionalPlate, ShockAbsorber, LegThruster
+	[Change]金属ブロックの攻撃力
+	[Change]クリエイティブインベントリから取り出した工具の耐久値
+	[Fix]Turbinの回転速度表示がおかしくなる不具合
+	[Fix]空中でもSprintBoosterの効果が得られる不具合
+	[Fix]機械の設置と同時に通電させるとクラッシュする可能性がある不具合
+	[Fix]機械の設置時にクラッシュした場合、ワールドに入れなくなる不具合
+	[Implement]ArmorBuilderで、ビルドに失敗した際に問題の箇所を強調する機能
+	[Improve]MAWorkbenchのシフトクリック操作
+
+0.7.0ob	[Add]パワードスーツ - Tier1
+	[Add]既存アーマー作成で解放される前提技術(Tier1パワードスーツの作成に必要)
+	[Add]充電器：Charger
+	[Change]クラフトの前提技術の表示名を短縮
+	[Implement]キーバインドのローカライズ
+	[Remove]消し忘れていたデバッグコード
+
+0.6.3ob	[Add]ElectricFurnace, Pulverizerとそれに付随するアイテム
+	[Change]タービンによる発電量を調整
+	[Fix]一部アイテムの名前が仕様と異なっていた
+	[Fix][SupportIC2]IC2のEUを許容量以上に入力したとき、溢れた分が消滅していた
+	[Fix][SupportIC2]PumpがIC2のEnergyNetと接続できなかった
+	[Implement]Hopper等の自動入搬出装置に対応
+	[Implement][SupportGT]GregTech6のThermometerSensorで機械の温度を確認できるように
+	[Implement][SupportIC2]IC2未導入時、EUEmitterをクリエイティブタブに追加しないように
+	[Optimize]CoalHeaterの描画更新処理を改善
+
+0.6.2ob	[Fix]Boilerの燃焼時間の同期がうまくいっていなかった
+	[Implement]Boiler 一瞬で水が全て蒸発しないように
+	[Implement]SteamCollector 廃熱能力を上方修正
+
+0.6.1ob	[Fix]クラフトしたTurbinRotorの耐久値が0だった
+	[Fix]TurbinCasingの上面及び底面テクスチャの向き
+
+0.6.0ob	[Add]機械類(主に火力発電関連)：Inlet, Pump, Pipe, Boiler, CoalHeater, SteamCollector, Turbin
+	[Add]新しい金属素材
+	[Fix]Smelterで一部小さな粉を溶かすレシピが登録されていなかった
+	[Refactor]SmallSmelterの内部処理を整理
+　　　　　　　　　0.5.x以前から引き継ぐ場合SmallSmelter内部の金属は消滅します
+
+0.5.4ob	[Add]MA_Enchant:Protection
+	[Fix][SupportNEI]アイテムをキーにしたレシピ検索が一部機能していなかった
+	[Fix][SupportNEI]UsageRecipeで融解レシピを表示した場合のレシピ表示が正常ではなかった
+	[Optimize]融解レシピの登録処理を高速化
+
+0.5.2ob	初版公開
