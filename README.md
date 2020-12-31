@@ -20,7 +20,4 @@ https://github.com/lichtmec/MaterialArms-API
 
 ## Links
 前配布場所(非公式日本フォーラム)  
-https://forum.minecraftuser.jp/viewtopic.php?f=13&t=27180  
-<br />
-更新履歴(未リリース含)  
-https://www.dropbox.com/s/sfeyxvovj0afw7w/changelog_ma.txt?dl=0  
+https://forum.minecraftuser.jp/viewtopic.php?f=13&t=27180
